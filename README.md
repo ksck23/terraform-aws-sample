@@ -11,3 +11,13 @@ $ sudo pip install --upgrade virtualenv
 # Install AWS CLI
 $ sudo pip install --upgrade awscli
 ```
+
+### Configure AWS CLI credentials
+```sh
+$ aws configure
+
+#AWS Access Key ID [None]: your-access-key
+#AWS Secret Access Key [None]: your-secret-access-key
+#Default region name [None]: us-west-1
+#Default output format [None]: json
+```
