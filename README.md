@@ -16,8 +16,22 @@ $ sudo pip install --upgrade awscli
 ```sh
 $ aws configure
 
-#AWS Access Key ID [None]: your-access-key
-#AWS Secret Access Key [None]: your-secret-access-key
-#Default region name [None]: us-west-1
-#Default output format [None]: json
+###
+AWS Access Key ID [None]: your-access-key
+AWS Secret Access Key [None]: your-secret-access-key
+Default region name [None]: us-west-1
+Default output format [None]: json
+###
+```
+
+### Run
+```sh
+# Initialize terraform in new project
+$ terraform init
+
+# Verify your infrastructure changes before you execute
+$ terraform plan
+
+# Get your infrastructure built
+$ terraform apply
 ```
