@@ -12,8 +12,9 @@ $ sudo pip install --upgrade virtualenv
 $ sudo pip install --upgrade awscli
 ```
 
-### Configure AWS CLI credentials
+### Configure AWS CLI
 ```sh
+# Need to create an IAM for console with respective permissions that will give you access key and secret key
 $ aws configure
 
 ###
