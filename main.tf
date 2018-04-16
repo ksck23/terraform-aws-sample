@@ -18,7 +18,13 @@ data "aws_ami" "ubuntu" {
   owners = ["099720109477"] # Canonical
 }
 
-resource "aws_instance" "free-tier-example" {
+resource "aws_instance" "sample" {
   ami           = "${data.aws_ami.ubuntu.id}"
   instance_type = "t2.micro"
+
+  # Save instance IPs to a file
+  provisioner "local-exec" {
+    command = "echo '${aws_instance.sample.public_ip}' >> hosts.txt"
+  }
 }
+
